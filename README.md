@@ -55,6 +55,16 @@ O aplicativo utiliza um banco de dados SQLite para armazenar registros de evento
 
 Este modelo é utilizado para criar registros de log no banco de dados à medida que os eventos são recebidos.
 
+## Observações
+
+O Active envia, por padrão, objetos `JSON` extensos no corpo do webhook. Portanto, é essencial tomar precauções ao lidar com esses objetos:
+
+- *Middleware para Interpretar Payloads JSON:* Certifique-se de que o servidor possua um middleware apropriado para interpretar os payloads JSON enviados nos webhooks do Active. Isso é fundamental para processar os dados recebidos de forma eficaz.
+
+- *Analisar Solicitações JSON:* Ao receber uma solicitação do webhook, é necessário analisar os dados JSON cuidadosamente. Certifique-se de ter rotinas de tratamento de erros adequadas para lidar com possíveis problemas de análise.
+
+- *Analisar Solicitações Codificadas em URL:* Além das solicitações JSON, você também pode receber solicitações codificadas em URL. Certifique-se de que seu servidor seja capaz de lidar com ambos os tipos de solicitações e tratar as informações de acordo com o formato recebido.
+
 ## Critérios de Avaliação
 
 - Precisão na implementação das rotas `/webhook` e `/logs`.
