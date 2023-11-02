@@ -42,6 +42,19 @@ Este teste técnico tem como objetivo avaliar suas habilidades em desenvolviment
 
 8. Certifique-se de que seu código seja organizado, comentado e siga as melhores práticas de desenvolvimento.
 
+## Esquema do Banco de Dados
+
+O aplicativo utiliza um banco de dados SQLite para armazenar registros de eventos. O esquema do banco de dados é representado pelo modelo a seguir:
+
+### Tabela `Log`
+
+- `id`: Um identificador único para cada registro.
+- `type`: O tipo de evento (por exemplo, "click").
+- `date_time`: Data e hora do evento.
+- `campaign`: Nome da campanha associada ao evento.
+
+Este modelo é utilizado para criar registros de log no banco de dados à medida que os eventos são recebidos.
+
 ## Critérios de Avaliação
 
 - Precisão na implementação das rotas `/webhook` e `/logs`.
