@@ -62,3 +62,4 @@ Este modelo é utilizado para criar registros de log no banco de dados à medida
 - Correta implementação de um banco de dados SQLite e uso de um ORM.
 - Implementação de autenticação por token.
 - Boas práticas de codificação, organização e documentação.
+- Uso do Typescript e ECMAScript.
