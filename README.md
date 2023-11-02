@@ -28,7 +28,7 @@ Este teste técnico tem como objetivo avaliar suas habilidades em desenvolviment
 }
 ```
 
-3. Salve os campos type, date_time e campaign.name no banco de dados SQLite como se fosse um registro de log.
+3. Salve os campos `type`, `date_time` e `campaign.name` no banco de dados SQLite como se fosse um registro de log.
 
 4. Implemente uma rota `/logs` que permita a recuperação dos registros de log armazenados no banco de dados. Essa rota deve suportar o seguinte parâmetro de consulta:
 
